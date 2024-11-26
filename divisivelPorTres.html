@@ -1,0 +1,24 @@
+<html>
+    <body>
+        <script>
+            function divPorTres (n) {
+                var divisiveis = ""; //armazena os números
+                for (var i = 1; i <= n; i++){ 
+                    if(i % 3 == 0) {
+                        divisiveis += i + ", "; //soma e concatena os valores
+                    }
+                }
+                alert("Aqui estão os números de 1 até " + n + " que são divisíveis por três: " + divisiveis);
+            }
+
+            var n = Number(prompt("Digite o número desejado:"));
+
+            while (Number.isNaN(n)) {
+                alert("Por favor, insira apenas números.");
+                n = Number(prompt("Digite o número desejado:"));
+            }
+
+            divPorTres(n);
+        </script>
+    </body>
+</html>
